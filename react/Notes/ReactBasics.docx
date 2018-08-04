@@ -1,0 +1,8 @@
+Use a build workflow
+1. Use Dependency Management tool: npm or yarn
+2.Use Bundler: webpack
+3.use compilier (next-gen javascript) Babel+Presets
+4.Use a Development server
+
+When you create a component file name, use Capital letter for file name
+Use lower case when you name a function
