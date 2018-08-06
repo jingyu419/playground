@@ -4,12 +4,13 @@ import BlinkApp from './components/Blink/BlinkApp';
 import FlexDimensionsBasics from './components/FlexBasics/FlexDimensionsBasics';
 import PizzaTranslator from './components/TextInput/PizzaTranslator';
 import ButtonBasics from './components/ButtonBasics/ButtonBasics';
+import Touchables from './components/ButtonBasics/Touchables';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style = {styles.container}>
-        <ButtonBasics />
+        <Touchables />
       </View>
     );
   }
