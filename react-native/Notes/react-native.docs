@@ -1,0 +1,68 @@
+Install react native globally: npm install -g create-react-native-app
+
+How to create a react native project: create-react-native-app AwesomeProject
+                                      cd AwesomeProject
+                                      npm start
+
+
+
+
+Use props: Your own components can also use props.
+ This lets you make a single component that is used in many different places in your app,
+  with slightly different properties in each place. Just refer to this.props in your render function.     
+
+With props and the basic Text, Image and View components, you can build a wide
+variety of static screens.
+
+
+
+
+Use state: There are two types of data that control a component: props and state.
+ props are set by the parent and they are fixed throughout the lifetime of a component.
+ For data that is going to change, we have to use state.
+ you should initialize state in the constructor, and then call setState when you want to change it.
+
+ We can use a state container like Redux and Mobx to control your data flow.
+
+
+
+ Use style: The style names and values usually match how CSS works on the web,
+ except the names are written using camel casing.
+
+ Example: (1)
+
+ const styles = StyleSheet.create({
+  bigblue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+  },
+});
+
+<Text style={styles.bigblue}>just bigblue</Text>
+
+Example (2)-- REMEMBER TWO CURLY BRACES
+ <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+
+
+ Manage Height and Width:
+ Fixed Dimension:   <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+
+ Flex Dimensions:
+ Normally you will use flex: 1 to fill all available space.
+ A component can only expand to fill available space if its parent has dimensions greater than 0.
+  If a parent does not have either a fixed width and height or flex,
+   the parent will have dimensions of 0 and the flex children will not be visible.
+
+Example for Flex dimensions:
+<View style={{flex: 1}}>
+        <View style={{flex: 1, backgroundColor: 'powderblue'}} />
+        <View style={{flex: 2, backgroundColor: 'skyblue'}} />
+        <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+      </View>
+
+
+
