@@ -1,3 +1,5 @@
+//This class is used to learn React state.
+
 import React, {Component} from 'react';
 import {AppRegistry,Text, View} from 'react-native';
 
@@ -6,14 +8,14 @@ class Blink extends Component{
         super(props);
         this.state = {isShowingText : true}
         
-        // setInterval(
-        //     ()=>{
-        //       this.setState(
-        //           previousState =>{
-        //               return {isShowingText : !previousState.isShowingText};
-        //           }
-        //       );
-        //     },1000);
+        setInterval(
+            ()=>{
+              this.setState(
+                  previousState =>{
+                      return {isShowingText : !previousState.isShowingText};
+                  }
+              );
+            },1000);
     }
 
     render(){

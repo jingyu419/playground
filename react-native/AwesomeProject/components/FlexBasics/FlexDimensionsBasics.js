@@ -1,3 +1,5 @@
+//This class is used for learning flex. Regarding to flexbox, check the note folder.
+
 import React, { Component } from 'react';
 import {View } from 'react-native';
 

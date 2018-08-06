@@ -1,0 +1,15 @@
+The number of pixels that fit into an inch is referred to as pixel density.
+ High-density screens have more pixels per inch than low-density ones.
+  As a result, UI elements of the same pixel dimensions appear larger on low-density screens,
+   and smaller on high-density screens.
+
+To calculate screen density, you can use this equation:
+Screen density = Screen width (or height) in pixels / Screen width (or height) in inches
+
+
+Density independence refers to the uniform display of UI elements on screens with different densities.
+
+Density-independent pixels, written as dp (pronounced “dips”), 
+are flexible units that scale to have uniform dimensions on any screen. 
+Material UIs use density-independent pixels to display elements consistently on 
+screens with different densities.

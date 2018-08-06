@@ -1,0 +1,10 @@
+margin: Margins are the space between content and the left and right edges of the screen.
+
+padding:Padding, essentially white space around content or components, 
+gives the UI breathing space and avoids overwhelming the user. 
+
+
+. for class   # for ID
+
+
+Color picker website:  https://www.w3schools.com/colors/colors_picker.asp
